@@ -24,13 +24,14 @@ public class JURNALSoal1 {
                     y=z;
                     jumlah+=z;
                 }
-            System.out.print("1 1");
-            for(int i=2; i<n; i++)
-            {
-                System.out.print(" "+h[i]);
-            }
+          while (n > 2){
+            System.out.print(h[n-1]+" ");
+            
+            n--;
+        }
+          System.out.println("1 1");
         System.out.println("");
-        System.out.println("Total = "+(jumlah+2));   
+   //     System.out.println("Total = "+(jumlah+2));   
     }
     }
     
