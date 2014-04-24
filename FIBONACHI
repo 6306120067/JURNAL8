@@ -1,0 +1,36 @@
+package jurnalsoal1;
+
+import java.util.Scanner;
+/**
+ *
+ * @author Asisten
+ */
+public class JURNALSoal1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       int x=1, y=1, z=1, n=0, jumlah=0;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Masukan Angka = ");
+        n = s.nextInt();
+        int h[] = new int[n];
+            for (int i=2; i<n; i++)
+                {
+                    z = x+y;  
+                    h[i] = z;
+                    x=y; 
+                    y=z;
+                    jumlah+=z;
+                }
+            System.out.print("1 1");
+            for(int i=2; i<n; i++)
+            {
+                System.out.print(" "+h[i]);
+            }
+        System.out.println("");
+        System.out.println("Total = "+(jumlah+2));   
+    }
+    }
+    
